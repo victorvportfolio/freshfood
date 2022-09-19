@@ -26,10 +26,10 @@ public class CartController {
         cartService.addSandwichToCart(cartId,sandwichId);
     }
 
-    //todo method to remove sandwich
+
     @PostMapping("/remove-sandwich")
     public void removeSandwich(@RequestParam("cartId") Integer cartId,@RequestParam("sandwichId")Integer sandwichId){
         cartService.removeSandwichToCart(cartId,sandwichId);
     }
-    //todo method to get price of cart
+
 }
